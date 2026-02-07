@@ -1,0 +1,125 @@
+# Canvas 8-Bit Game Engine
+
+**Narrative-Driven Space Invaders with Pixel Art, CRT Effects, and Visual Evolution**
+
+---
+
+## Why This Exists
+
+Most game demos on the web are either trivial toys or heavy Unity/Unreal exports. There is a gap: where do you find a hand-crafted game engine that demonstrates real interactive development skill -- collision systems, sprite animation, particle effects, state machines, narrative design -- without hiding behind a framework?
+
+Canvas 8-Bit Game Engine is that proof of concept. It is a complete Space Invaders-style game built from scratch with a twist: the game tells a story. Players start in a monochrome, CRT-filtered world. As they progress, the visuals evolve -- from grayscale to color to full neon. The game itself is a metaphor for brand transformation, originally designed as an interactive demo for Universal FAW Labs' brand experience platform.
+
+The engine includes pixel-art sprite definitions (crab, squid, octopus aliens), weapon systems with overheating mechanics, a badge/achievement system, power-up drops, and a full story progression with dialog sequences. The companion effect files demonstrate Three.js 3D text arrays with fog, and organic morphing geometry visualizations.
+
+No game libraries. No frameworks. Just Canvas, JavaScript, and the craft of making things move on screen.
+
+---
+
+## Architecture
+
+```
+canvas-8bit-game-engine/
+|
+|-- game_v1.html         Game Engine v1
+|                        - Core Space Invaders mechanics
+|                        - Pixel-art alien sprites (11x8 grids)
+|                        - CRT scanline + glitch text effects
+|                        - Canvas-based rendering loop
+|                        - Collision detection
+|
+|-- game_v2.html         Game Engine v2 (Main Engine, 1330+ lines)
+|                        - Full narrative progression system
+|                        - Three visual stages: Mono -> Color -> Neon
+|                        - Weapon system (default, red, green, blue, gold)
+|                        - Overheating mechanics + ammo management
+|                        - Badge/achievement unlock system
+|                        - Power-up drops with probability tables
+|                        - Configurable alien assets and weapons
+|                        - Settings panel + pixel editor integration
+|                        - Old-TV CRT filter with flicker animation
+|                        - Level-clear and game-over sequences
+|
+|-- effect.html          Three.js 3D Text Array
+|                        - 3D text rendering with depth and fog
+|                        - Dynamic camera controls
+|                        - Loading state management
+|
+|-- bgeffect.html        Three.js Organic Geometry
+|                        - Multiple morphing 3D shapes
+|                        - Shape switching UI
+|                        - Real-time parameter controls
+|
+|-- demo-index.html      Brand Landing Page
+|                        - Industrial blueprint aesthetic
+|                        - Service showcase layout
+|                        - Module pricing grid
+```
+
+### Game Engine Features (v2)
+
+**Rendering**
+- Canvas 2D context with requestAnimationFrame game loop
+- Pixel-perfect sprite rendering from 11x8 binary grid definitions
+- Two-frame sprite animation for alien movement
+- Dynamic canvas resizing to parent container
+
+**Visual Progression**
+- Stage 0: Monochrome with old-TV grayscale filter
+- Stage 1: Color unlocked, CRT effects remain
+- Stage 2: Full neon with enhanced visual effects
+- Transitions triggered by score thresholds with story dialog
+
+**Combat System**
+- Four weapon types with distinct behaviors
+- Red weapon: high damage, limited ammo with overheating cooldown
+- Green/Blue/Gold: varied fire rates and damage profiles
+- Power-up gem drops from defeated aliens with configurable probability
+
+**Game State**
+- Score tracking, level progression, pause/resume
+- Badge system with unlock conditions
+- Alien descent timer with escalating difficulty
+- Configurable game assets (sprites, weapons, badges) through settings panel
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Game Engine | HTML5 Canvas 2D API, requestAnimationFrame |
+| UI Framework | React (for game chrome, menus, dialogs) |
+| 3D Effects | Three.js (effect pages only) |
+| Sprite System | Binary grid definitions (11x8 matrices) |
+| Styling | Tailwind CSS (utility classes), custom CSS animations |
+| Fonts | Press Start 2P (retro), Rajdhani (tech), JetBrains Mono (code) |
+| Visual Effects | CRT scanlines, glitch text, old-TV filter, flicker animation |
+
+---
+
+## Quick Start
+
+Each file is self-contained. Open any HTML file directly in a browser:
+
+```bash
+# Open the main game engine
+open game_v2.html
+
+# Open the first version
+open game_v1.html
+
+# View 3D text effect
+open effect.html
+
+# View organic geometry effect
+open bgeffect.html
+```
+
+No build step. No dependencies to install. No server required.
+
+---
+
+## Author
+
+**Huang Akai (Kai)** -- Founder @ Universal FAW Labs | Creative Technologist | Ex-Ogilvy | 15+ years in digital creative and marketing technology.
