@@ -4,7 +4,13 @@
 
 ---
 
-## Why This Exists
+## 📋 Quick Summary
+
+> 🎮 這是一款**純手工打造的 8-bit 復古遊戲引擎**，不使用任何遊戲框架，僅靠 HTML5 Canvas 2D API 和原生 JavaScript 構建完整的 Space Invaders 風格遊戲。🌟 最大亮點是**敘事驅動的視覺進化系統**——玩家從黑白 CRT 濾鏡世界起步，隨著分數推進，畫面逐步從單色演變為彩色、最終進入全霓虹特效，遊戲本身就是一場視覺變革的隱喻。👾 引擎包含像素藝術精靈定義（螃蟹、烏賊、章魚外星人，11x8 二進位矩陣）、**四種武器系統**（含過熱機制與彈藥管理）、寶石掉落概率表、徽章/成就解鎖系統，以及完整的故事對話序列。📺 CRT 效果包含掃描線、故障文字特效和老電視閃爍動畫。🎨 伴隨的特效檔案展示了 Three.js 3D 文字陣列（含霧效）和有機形態變形幾何視覺化。⚡ 每個檔案完全獨立，無需建置步驟、無需安裝套件、無需伺服器。適合對**遊戲引擎原理、Canvas 渲染、復古像素藝術**有興趣的開發者學習。
+
+---
+
+## 🤔 Why This Exists
 
 Most game demos on the web are either trivial toys or heavy Unity/Unreal exports. There is a gap: where do you find a hand-crafted game engine that demonstrates real interactive development skill -- collision systems, sprite animation, particle effects, state machines, narrative design -- without hiding behind a framework?
 
@@ -16,7 +22,7 @@ No game libraries. No frameworks. Just Canvas, JavaScript, and the craft of maki
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ```
 canvas-8bit-game-engine/
@@ -84,7 +90,7 @@ canvas-8bit-game-engine/
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -98,7 +104,7 @@ canvas-8bit-game-engine/
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 Each file is self-contained. Open any HTML file directly in a browser:
 
@@ -120,6 +126,6 @@ No build step. No dependencies to install. No server required.
 
 ---
 
-## Author
+## 👤 Author
 
 **Huang Akai (Kai)** -- Founder @ Universal FAW Labs | Creative Technologist | Ex-Ogilvy | 15+ years in digital creative and marketing technology.
